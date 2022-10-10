@@ -1,0 +1,134 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3289253149,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user navigates to \"https://healthcare.ascension.org/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://healthcare.ascension.org/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2866467438,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AscensionSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 77479,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Validate Ascension Logo",
+        "description": "",
+        "id": "ascension-homepage-functionality;validate-ascension-logo",
+        "after": [
+          {
+            "result": {
+              "duration": 3156886929,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17312204,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should see \"ascension\" in the url",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ascension\"",
+                  "offset": 16
+                }
+              ],
+              "location": "AscensionSteps.user_should_see_in_the_url(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3086815,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should see \"Ascension\" in the title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ascension\"",
+                  "offset": 16
+                }
+              ],
+              "location": "AscensionSteps.user_should_see_in_the_title(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33718537,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "validate  Ascension Logo displays",
+            "match": {
+              "location": "AscensionSteps.validate_Ascension_Logo_displays()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Ascension HomePage Functionality",
+    "description": "",
+    "id": "ascension-homepage-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/ascension.feature",
+    "tags": []
+  }
+]
