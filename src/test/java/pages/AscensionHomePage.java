@@ -18,4 +18,10 @@ public class AscensionHomePage {
 
     @FindBy(css="ul[class='primary-navigation-heading']>li")
     public List<WebElement> mainMenuItems;
+
+    @FindBy(css = "div[class='hero-placeholder-section'] a")
+    public List<WebElement> heroPlaceHolderMenuItems;
+
+    @FindBy(css = "a[title='Find a Doctor']>span:nth-child(2)")
+    public WebElement findADoctorLink;
 }

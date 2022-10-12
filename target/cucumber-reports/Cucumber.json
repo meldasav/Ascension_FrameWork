@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3289253149,
+              "duration": 2737751785,
               "status": "passed"
             },
             "line": 4,
@@ -33,7 +33,7 @@
         "before": [
           {
             "result": {
-              "duration": 2866467438,
+              "duration": 2065799200,
               "status": "passed"
             },
             "match": {
@@ -42,7 +42,7 @@
           },
           {
             "result": {
-              "duration": 77479,
+              "duration": 90654,
               "status": "passed"
             },
             "match": {
@@ -50,14 +50,14 @@
             }
           }
         ],
-        "line": 7,
-        "name": "Validate Ascension Logo",
+        "line": 13,
+        "name": "Validate main menu items",
         "description": "",
-        "id": "ascension-homepage-functionality;validate-ascension-logo",
+        "id": "ascension-homepage-functionality;validate-main-menu-items",
         "after": [
           {
             "result": {
-              "duration": 3156886929,
+              "duration": 3152297317,
               "status": "passed"
             },
             "match": {
@@ -70,56 +70,260 @@
         "steps": [
           {
             "result": {
-              "duration": 17312204,
+              "duration": 199091546,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user should see \"ascension\" in the url",
+            "line": 14,
+            "name": "user should see menu items display with their texts",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"ascension\"",
-                  "offset": 16
-                }
-              ],
-              "location": "AscensionSteps.user_should_see_in_the_url(String)"
+              "location": "AscensionSteps.user_should_see_menu_items_display_with_their_texts(DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "SPECIALTY CARE",
+                  "FIND A LOCATION",
+                  "FIND A DOCTOR",
+                  "SCHEDULE AN APPOINTMENT"
+                ]
+              }
+            ],
             "keyword": "Then "
-          },
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
           {
             "result": {
-              "duration": 3086815,
+              "duration": 3298961580,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user should see \"Ascension\" in the title",
+            "line": 4,
+            "name": "user navigates to \"https://healthcare.ascension.org/\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Ascension\"",
-                  "offset": 16
+                  "val": "\"https://healthcare.ascension.org/\"",
+                  "offset": 18
                 }
               ],
-              "location": "AscensionSteps.user_should_see_in_the_title(String)"
+              "location": "BaseSteps.userNavigatesTo(String)"
             },
-            "keyword": "And "
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 986394583,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AscensionSteps.setup()"
+            }
           },
           {
             "result": {
-              "duration": 33718537,
+              "duration": 18522,
               "status": "passed"
             },
-            "line": 11,
-            "name": "validate  Ascension Logo displays",
             "match": {
-              "location": "AscensionSteps.validate_Ascension_Logo_displays()"
+              "location": "BaseSteps.setup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Validate specialty care",
+        "description": "",
+        "id": "ascension-homepage-functionality;validate-specialty-care",
+        "after": [
+          {
+            "result": {
+              "duration": 3383444624,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8903993796,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user clicks on \"SPECIALTY CARE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SPECIALTY CARE\"",
+                  "offset": 15
+                }
+              ],
+              "location": "AscensionSteps.user_clicks_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46148819,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "validate \"Specialty Care\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Specialty Care\"",
+                  "offset": 9
+                }
+              ],
+              "location": "AscensionSteps.validate_is_displayed(String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Smoke"
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3416111525,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user navigates to \"https://healthcare.ascension.org/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://healthcare.ascension.org/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1133458565,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AscensionSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 16767,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Validate hero placeHolder menu items",
+        "description": "",
+        "id": "ascension-homepage-functionality;validate-hero-placeholder-menu-items",
+        "after": [
+          {
+            "result": {
+              "duration": 3167456473,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 279471783,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "validate hero placeHolder menu items are displayed",
+            "match": {
+              "location": "AscensionSteps.validateHeroPlaceHolderMenuItemsAreDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3094774528,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user clicks on \"FIND A DOCTOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FIND A DOCTOR\"",
+                  "offset": 15
+                }
+              ],
+              "location": "AscensionSteps.user_clicks_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2169844119,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user should see \"Find a Doctor\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Find a Doctor\"",
+                  "offset": 16
+                }
+              ],
+              "location": "AscensionSteps.userShouldSee(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
           }
         ]
       }

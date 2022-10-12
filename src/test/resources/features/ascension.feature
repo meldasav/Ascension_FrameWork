@@ -5,7 +5,6 @@ Feature: Ascension HomePage Functionality
 
   @Smoke
   Scenario: Validate Ascension Logo
-
     Then  user should see "ascension" in the url
     And   user should see "Ascension" in the title
     Then   validate  Ascension Logo displays
@@ -19,3 +18,9 @@ Feature: Ascension HomePage Functionality
   Scenario: Validate specialty care
     When user clicks on "SPECIALTY CARE"
     Then validate "Specialty Care" is displayed
+
+  @Regression
+  Scenario: Validate hero placeHolder menu items
+    Then validate hero placeHolder menu items are displayed
+    When user clicks on "FIND A DOCTOR"
+    Then user should see "Find a Doctor"
